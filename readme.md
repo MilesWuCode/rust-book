@@ -53,6 +53,12 @@ cargo check
 
 # 建構發佈版本（Release）
 cargo build --release
+
+# 安裝crate
+cargo add rand
+
+# 文件 ./target/doc/project/index.html
+cargo doc --open
 ```
 
 - 我們可以用 cargo new 產生專案。
@@ -60,3 +66,8 @@ cargo build --release
 - 我們可以用 cargo run 同時建構並執行專案。
 - 我們可以用 cargo check 建構專案來檢查錯誤，但不會產生執行檔。
 - Cargo 會儲存建構結果在 target/debug 目錄底下，而不是放在與我們程式碼相同的目錄。
+
+## 標準函式庫文件
+
+- https://doc.rust-lang.org/std/prelude/index.html
+- https://crates.io
